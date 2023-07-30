@@ -20,6 +20,8 @@ const Navbar = () => {
 const StyledNavbar=styled.nav`
 display:flex;
 justify-content: space-between;
+background: rgba(0,0,0,0.5);
+
 ul{
     margin-right:11px;
     display:flex;
