@@ -21,7 +21,7 @@ const StyledNavbar=styled.nav`
 display:flex;
 justify-content: space-between;
 ul{
-    margin-right:10px;
+    margin-right:11px;
     display:flex;
     float:right;
 }
