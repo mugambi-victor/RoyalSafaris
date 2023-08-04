@@ -20,7 +20,7 @@ const Navbar = () => {
 const StyledNavbar=styled.nav`
 display:flex;
 justify-content: space-between;
-background: rgba(0,0,0,0.5);
+background: transparent;
 
 ul{
     margin-right:11px;
@@ -31,11 +31,11 @@ li{
     display:flex;
     float:right;
     padding: 13px;
-    color:white;
+    color:black;
 }
 .logo{
     padding:13px;
-    color:white;
+    color:black;
 }
 `
 export default Navbar
