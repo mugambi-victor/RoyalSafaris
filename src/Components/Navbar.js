@@ -30,11 +30,11 @@ ul{
 li{
     display:flex;
     float:right;
-    padding: 13px;
+    padding: 30px;
     color:black;
 }
 .logo{
-    padding:13px;
+    padding:30px;
     color:black;
 }
 `

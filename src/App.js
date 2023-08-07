@@ -1,7 +1,8 @@
 import React from "react";
 import Home from "./Components/Home";
-import { Paragraph1 } from "./Components/Paragraph1";
+import MBody from "./Components/MBody";
 import {BasicSlider} from "./Components/BasicSlider"
+
 function App() {
 
  
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
     <Home/>
     <BasicSlider/>
-    <Paragraph1/>
+    <MBody/>
     </div>
   );
 }

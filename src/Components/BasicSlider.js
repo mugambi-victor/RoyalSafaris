@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSlider, {Overlay, Slide} from 'hero-slider';
+import HeroSlider, {Slide} from 'hero-slider';
 import animal from "../img/animal-safari.jpg";
 import giraffe from "../img/mountain-g128d5b38d_1280.jpg";
 import camping from "../img/camping-g03662fd9d_1280.jpg"
@@ -7,7 +7,7 @@ import Card from "./Card.js"
 export const BasicSlider = () => {
   return (
     <HeroSlider
-  height="100vh"
+  height="70vh"
   
   autoplay 
   controller={{

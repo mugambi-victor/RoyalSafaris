@@ -1,0 +1,83 @@
+
+
+/* Container to ensure proper positioning */
+.image-container {
+  
+    width: 60%;
+    margin-top: 10px;
+    margin-left: .5em;
+    margin-right: .5em;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* The image */
+  .image {
+     /* Set your desired image width */
+    height: 400px; /* Set your desired image height */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  
+  /* The overlay */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Set the overlay background color and transparency */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* The title inside the overlay */
+  .title {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    transition: transform 3s ease;
+  }
+  
+  /* The expanded title on hover */
+  .title.expanded {
+    transform: translateY(0%);
+    
+  }
+  
+  /* The expanded text on hover */
+  .expanded-text {
+    color: #fff;
+    transition: opacity 1s ease-in;
+  }
+  
+  /* Hide expanded text initially */
+  .overlay:not(.expanded) .expanded-text {
+    display: none;
+  }
+  
+  /* Show the overlay on hover */
+  .image-container:hover .overlay {
+    transition: all 2s;
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height:auto;
+
+   
+    
+
+  }
+  
+  .image-container:hover .image {
+    cursor: pointer;
+    transition: all 2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .cardss{
+    width:100%;
+    display:flex;
+    
+  }
+
