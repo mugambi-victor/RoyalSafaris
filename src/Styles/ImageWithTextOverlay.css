@@ -30,7 +30,7 @@
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5); /* Set the overlay background color and transparency */
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition:  0.3s ease;
   }
   
   /* The title inside the overlay */
@@ -78,6 +78,19 @@
   .cardss{
     width:100%;
     display:flex;
+    @media(max-width:997px){
+      display: block;
+      width:100%;
+      .image-container{
+        width: 100%;
+      }
     
+    }
+  }
+  .App{
+    @media(max-width:997px)
+    {
+      display: block;
+    }
   }
 

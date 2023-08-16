@@ -15,15 +15,26 @@ function Card(props) {
   )
 }
 const Styledddiv=styled.div`
-margin:10em;
+margin:10rem;
 display: flex;
 float:right;
 background: rgba(0,0,0,0.5);
 width:40%;
 color:white;
 @media(max-width:997px){
-  width:100%;
-  margin-top:2rem;
+  margin:0;
+  margin-top:5rem;
+  
+  flex-direction: column;
+  width:70%;
+  height: 100%;
+  font-size: 1rem;
+
+  div{
+    padding-left:5rem;
+  }
+ 
+
 }
 div{
  
@@ -32,11 +43,7 @@ div{
 ul{
   padding-left:3em
 }
-div:hover{
-  transform:scale(1.1);
 
-  
-}
 h1{
   display:flex;
     justify-content:center;
@@ -44,7 +51,7 @@ h1{
 }
 p{
   
-    padding-top: 1rem;
+    font-weight: bold;
 }
 
 

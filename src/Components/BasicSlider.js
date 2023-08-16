@@ -7,8 +7,8 @@ import Card from "./Card.js"
 export const BasicSlider = () => {
   return (
     <HeroSlider
-  height="70vh"
-  
+  height="80vh"
+
   autoplay 
   controller={{
    
@@ -33,7 +33,7 @@ export const BasicSlider = () => {
 
     
         <Slide 
-      
+        
         background={{
           backgroundImageSrc: animal,
             backgroundAttachment: "fixed"
@@ -42,11 +42,12 @@ export const BasicSlider = () => {
         > 
           <Card 
           title={[
-           <div> <h1>Royal safaris</h1>
+           <div> <h3>Royal safaris</h3>
             <i>Where your journey begins..</i></div>
           ]}
          />
         </Slide>
+
         <Slide background={{
          
             backgroundImageSrc: giraffe,
@@ -55,9 +56,12 @@ export const BasicSlider = () => {
         >
           <Card 
           title={[
-            <div> <h1>Royal safaris</h1>
-             <i>Where your journey begins..</i></div>
+            <div> <h3>Royal safaris</h3>
+             </div>
            ]}
+           body={[
+            <i>Ultimate traveling experience at an affordable package</i>
+          ]}
          
          />
         </Slide>
@@ -69,9 +73,10 @@ export const BasicSlider = () => {
      >
        <Card 
         title={[
-          <h3><i>Camp like you never camped before!</i></h3>
+          <h3>Lets Go Camping </h3>
         ]}
         body={[
+          <i>Camp like you never camped before!</i>,
           <ul>
             <li>Barbecues and Bonfires</li>
             <li>Fresh Outdoors</li>
