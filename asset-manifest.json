@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/royalsafaris/static/css/main.c2fb0717.css",
-    "main.js": "/royalsafaris/static/js/main.589c9ec5.js",
+    "main.css": "/royalsafaris/static/css/main.2374e0b6.css",
+    "main.js": "/royalsafaris/static/js/main.e593312f.js",
     "static/media/leopard-g8e51e57b3_1280.jpg": "/royalsafaris/static/media/leopard-g8e51e57b3_1280.9d963a6db979a1312827.jpg",
     "static/media/animal-safari.jpg": "/royalsafaris/static/media/animal-safari.950c4ca547656ddb4a87.jpg",
     "static/media/camping-g03662fd9d_1280.jpg": "/royalsafaris/static/media/camping-g03662fd9d_1280.0678790f1fc35895b021.jpg",
     "static/media/tanzania-gc4c8dffce_1280.jpg": "/royalsafaris/static/media/tanzania-gc4c8dffce_1280.5e150e8176cb51f0d767.jpg",
     "static/media/mountain-g128d5b38d_1280.jpg": "/royalsafaris/static/media/mountain-g128d5b38d_1280.9a4bde5c11e8c4474fcd.jpg",
     "index.html": "/royalsafaris/index.html",
-    "main.c2fb0717.css.map": "/royalsafaris/static/css/main.c2fb0717.css.map",
-    "main.589c9ec5.js.map": "/royalsafaris/static/js/main.589c9ec5.js.map"
+    "main.2374e0b6.css.map": "/royalsafaris/static/css/main.2374e0b6.css.map",
+    "main.e593312f.js.map": "/royalsafaris/static/js/main.e593312f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2fb0717.css",
-    "static/js/main.589c9ec5.js"
+    "static/css/main.2374e0b6.css",
+    "static/js/main.e593312f.js"
   ]
 }
