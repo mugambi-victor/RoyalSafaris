@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/royalsafaris/static/css/main.530c40e3.css",
-    "main.js": "/royalsafaris/static/js/main.cbede87a.js",
+    "main.js": "/royalsafaris/static/js/main.1d819128.js",
     "static/media/leopard-g8e51e57b3_1280.jpg": "/royalsafaris/static/media/leopard-g8e51e57b3_1280.9d963a6db979a1312827.jpg",
     "static/media/animal-safari.jpg": "/royalsafaris/static/media/animal-safari.950c4ca547656ddb4a87.jpg",
     "static/media/camping-g03662fd9d_1280.jpg": "/royalsafaris/static/media/camping-g03662fd9d_1280.0678790f1fc35895b021.jpg",
@@ -9,10 +9,10 @@
     "static/media/mountain-g128d5b38d_1280.jpg": "/royalsafaris/static/media/mountain-g128d5b38d_1280.9a4bde5c11e8c4474fcd.jpg",
     "index.html": "/royalsafaris/index.html",
     "main.530c40e3.css.map": "/royalsafaris/static/css/main.530c40e3.css.map",
-    "main.cbede87a.js.map": "/royalsafaris/static/js/main.cbede87a.js.map"
+    "main.1d819128.js.map": "/royalsafaris/static/js/main.1d819128.js.map"
   },
   "entrypoints": [
     "static/css/main.530c40e3.css",
-    "static/js/main.cbede87a.js"
+    "static/js/main.1d819128.js"
   ]
 }
