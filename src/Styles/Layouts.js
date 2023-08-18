@@ -7,7 +7,7 @@ margin-right:3rem;
 margin-left:3rem;
 
 @media(max-width: 992px){
-    margin:2rem;
+    margin:1rem;
 
 }
 `; 

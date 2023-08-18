@@ -35,7 +35,7 @@ const StyledNavbar=styled.nav`
 display:flex;
 width:100%;
 justify-content: space-between;
-background: whitesmoke;
+background: white;
 position: fixed;
 z-index: 8;
 
@@ -49,6 +49,7 @@ button{
 }
 @media(max-width:992px){
     display:block;
+   
     height:auto;
     button{
     visibility:visible;
@@ -58,10 +59,11 @@ button{
     top:.5rem;
     }
     .logo{
-        padding:1rem;
+        padding:2rem;
         display:flex;
         justify-content: space-between;
     }
+
 
 }
 
@@ -105,7 +107,7 @@ float:none;
   a{
     position:absolute;
     float:none;
-    left:2rem;
+    padding-left:2rem;
     display:flex;
     flex-direction: column;
     width:100%;

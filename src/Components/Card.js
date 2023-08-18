@@ -5,7 +5,7 @@ function Card(props) {
   return (
     <Styledddiv className='card-container'>
      <div>
-      <h1>{props.icon}{props.title}</h1>
+      <h3>{props.icon}{props.title}</h3>
       {/* <img src={props.imageurl} alt='img'/> */}
       <p>{props.body}</p>
       </div>
@@ -15,7 +15,7 @@ function Card(props) {
   )
 }
 const Styledddiv=styled.div`
-margin:10rem;
+margin-top:10rem;
 display: flex;
 float:right;
 background: rgba(0,0,0,0.5);
@@ -23,11 +23,13 @@ width:40%;
 color:white;
 @media(max-width:997px){
   margin:0;
-  margin-top:5rem;
+  /* margin-top:8rem; */
   
   flex-direction: column;
-  width:70%;
+  width:100%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
   font-size: 1rem;
 
   div{
@@ -44,9 +46,9 @@ ul{
   padding-left:3em
 }
 
-h1{
+h3{
   display:flex;
-    justify-content:center;
+   
 
 }
 p{

@@ -43,7 +43,11 @@ export const BasicSlider = () => {
           <Card 
           title={[
            <div> <h3>Royal safaris</h3>
-            <i>Where your journey begins..</i></div>
+            </div>
+          ]}
+          body={[
+            <i>Let us take you there.
+            </i>
           ]}
          />
         </Slide>
@@ -60,7 +64,7 @@ export const BasicSlider = () => {
              </div>
            ]}
            body={[
-            <i>Ultimate traveling experience at an affordable package</i>
+            <i>Discover the world, One trip at a time</i>
           ]}
          
          />
@@ -73,10 +77,9 @@ export const BasicSlider = () => {
      >
        <Card 
         title={[
-          <h3>Lets Go Camping </h3>
+          <h3> <i>Camp like you never camped before!</i></h3>
         ]}
         body={[
-          <i>Camp like you never camped before!</i>,
           <ul>
             <li>Barbecues and Bonfires</li>
             <li>Fresh Outdoors</li>
