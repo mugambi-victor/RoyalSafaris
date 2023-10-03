@@ -15,8 +15,9 @@ const Home = () => {
     <InnerLayout>
     <MBody/>
     <Testimonials/>
-    <QuickLinks/>
+   
     </InnerLayout>
+    <QuickLinks/>
     </StyledHome>
   )
 }
