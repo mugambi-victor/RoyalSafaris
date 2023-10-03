@@ -1,23 +1,27 @@
-import React, { useState, useRef} from 'react';
-import '../Styles/ImageWithTextOverlay.css'; // Import the CSS file for styling
+import React, { useState, useRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import '../Styles/ImageWithTextOverlay.css';
 
-const CardImageOverlay = ({ imageUrl, title, expandedText }) => {
+const CardImageOverlay = ({ imageUrl, title, amt, expandedText }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const timer = useRef(null);
+
   const handleMouseEnter = () => {
-   
     timer.current = setTimeout(() => {
-        setIsExpanded(true);
-      }, 100);
-    
+      setIsExpanded(true);
+    }, 100);
   };
 
   const handleMouseLeave = () => {
     setIsExpanded(false);
   };
 
+  useEffect(() => {
+    return () => clearTimeout(timer.current);
+  }, []);
 
-  
+  const expandedClassName = isExpanded ? 'expanded' : '';
+
   return (
     <div
       className="image-container"
@@ -25,18 +29,45 @@ const CardImageOverlay = ({ imageUrl, title, expandedText }) => {
       onMouseLeave={handleMouseLeave}
     >
       <div
-        className={`image ${isExpanded ? 'expanded' : '' }`}
+        className={`image ${expandedClassName}`}
         style={{
           backgroundImage: `url(${imageUrl})`,
         }}
       >
-        <div className={`overlay ${isExpanded ? 'expanded' : ''}`}>
-          <h2 className={`title ${isExpanded ? 'expanded' : ''}`}>{title}</h2>
-          {isExpanded && <p className="expanded-text">{expandedText}</p>}
+        <div className={`overlay ${expandedClassName}`}>
+          <h6 className={`title ${expandedClassName}`}>
+            {title}
+            <br />
+            <span>{amt}</span>
+          </h6>
+          {isExpanded && (
+            <div className="expanded-text">
+              {Array.isArray(expandedText) ? (
+                <ul >
+                  {expandedText.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{expandedText}</p>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>
   );
 };
+
+CardImageOverlay.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  amt: PropTypes.number.isRequired,
+  expandedText: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
+};
+
 
 export default CardImageOverlay;

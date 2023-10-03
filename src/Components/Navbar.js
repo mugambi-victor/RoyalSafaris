@@ -34,6 +34,7 @@ const ai={
 const StyledNavbar=styled.nav`
 display:flex;
 width:100%;
+height:80px;
 justify-content: space-between;
 background: white;
 position: fixed;
@@ -54,12 +55,12 @@ button{
     button{
     visibility:visible;
     margin-right:1rem;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
   
     top:.5rem;
     }
     .logo{
-        padding:2rem;
+        padding:1rem;
         display:flex;
         justify-content: space-between;
     }
@@ -70,11 +71,10 @@ button{
 `
 const Nav=styled.section`
 
-    margin-right:11px;
+    
     display:flex;
     float:right;
-    padding-top:1.5rem;
-    padding-bottom:1.5rem;
+    padding:2rem;
 
     span{
     margin-right:2rem;
@@ -82,17 +82,16 @@ const Nav=styled.section`
 a{
     
     text-decoration: none;
-    font-weight: 400;
+    font-weight: bold;
     color:black;
     position:relative;
     font-size:1rem;
     transition: .5 ease-in-out;
-    padding:1rem;
+ 
         
        }
        a:hover{
-        background-color: black;
-        color:white;
+        color:#0047ab;
         width:100%;
         
   }

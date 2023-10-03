@@ -52,7 +52,12 @@
     color: #fff;
     transition: opacity 1s ease-in;
   }
-  
+  ul li{ 
+    margin-left: 1rem;
+  }
+  ul{
+    line-height: 2;
+  }
   /* Hide expanded text initially */
   .overlay:not(.expanded) .expanded-text {
     display: none;

@@ -7,14 +7,14 @@ import Card from "./Card.js"
 export const BasicSlider = () => {
   return (
     <HeroSlider
-  height="80vh"
+  height="90vh"
 
   autoplay 
   controller={{
    
     initialSlide: 1,
     slidingDuration: 800,
-    slidingDelay: 100,
+    slidingDelay: 0,
     // onSliding: (nextSlide:2) =>
     //   console.debug('onSliding(nextSlide): ', nextSlide),
     // onBeforeSliding: (previousSlide: 1, nextSlide: 3) =>
@@ -28,10 +28,6 @@ export const BasicSlider = () => {
     
   }}
 >
- 
-    
-
-    
         <Slide 
         
         background={{
@@ -42,11 +38,11 @@ export const BasicSlider = () => {
         > 
           <Card 
           title={[
-           <div> <h3>Royal safaris</h3>
+           <div> <h3>RoyalSafaris</h3>
             </div>
           ]}
           body={[
-            <i>Let us take you there.
+            <i>Your Gateway to Adventure in Isiolo!
             </i>
           ]}
          />
@@ -59,13 +55,14 @@ export const BasicSlider = () => {
         }}
         >
           <Card 
-          title={[
-            <div> <h3>Royal safaris</h3>
-             </div>
-           ]}
-           body={[
-            <i>Discover the world, One trip at a time</i>
-          ]}
+         title={[
+          <div> <h3>RoyalSafaris</h3>
+           </div>
+         ]}
+         body={[
+           <i>Your Gateway to Adventure in Isiolo!
+           </i>
+         ]}
          
          />
         </Slide>
@@ -77,15 +74,13 @@ export const BasicSlider = () => {
      >
        <Card 
         title={[
-          <h3> <i>Camp like you never camped before!</i></h3>
-        ]}
-        body={[
-          <ul>
-            <li>Barbecues and Bonfires</li>
-            <li>Fresh Outdoors</li>
-            <li>Greetings from the Wild</li>
-          </ul>
-        ]}
+          <div> <h3>RoyalSafaris</h3>
+           </div>
+         ]}
+         body={[
+           <i>Your Gateway to Adventure in Isiolo!
+           </i>
+         ]}
       />
      </Slide>
          
